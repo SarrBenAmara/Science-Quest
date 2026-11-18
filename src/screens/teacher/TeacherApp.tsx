@@ -111,7 +111,10 @@ function Dashboard({ uid, email }: { uid: string; email?: string }) {
     if (!IS_DEMO || !banks || Object.keys(banks).length || seeded.current) return;
     seeded.current = true;
     if (import.meta.env.VITE_BACKEND === 'demo') {
-      import('../../../question-banks/science-quest-50.json').then((m) => saveBank(db(), uid, parseJsonBank(JSON.stringify(m.default)).bank));
+      // Optional file: only present on the teacher's own computer, never in the public repository.
+      const found = import.meta.glob('../../../question-banks/science-quest-50.json');
+      const load = Object.values(found)[0] as undefined | (() => Promise<any>);
+      load?.().then((m) => saveBank(db(), uid, parseJsonBank(JSON.stringify(m.default ?? m)).bank));
     }
   }, [banks, uid]);
   const activeRoom = useListen<string | null | 'loading'>('host', `teachers/${uid}/activeRoom`, 'loading', null);
