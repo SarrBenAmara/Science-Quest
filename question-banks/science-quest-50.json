@@ -1,0 +1,1236 @@
+{
+  "schema": "science-quest/v1",
+  "name": "Science Quest — Year 9 Bank (50)",
+  "description": "Biology 18 · Physics 16 · Chemistry 16. Created by Mrs Sarra Ben Amara.",
+  "questions": [
+    {
+      "id": "B01",
+      "type": "mcq",
+      "lab": "biology",
+      "topic": "Photosynthesis",
+      "difficulty": "easy",
+      "prompt": "Which gas do plants absorb during photosynthesis?",
+      "explanation": "Plants take in carbon dioxide from the air and use light energy to turn it (with water) into glucose. Oxygen is released as a by-product.",
+      "timeLimit": 30,
+      "points": 100,
+      "speedBonus": 30,
+      "options": [
+        "Oxygen",
+        "Nitrogen",
+        "Carbon dioxide",
+        "Hydrogen"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "B02",
+      "type": "truefalse",
+      "lab": "biology",
+      "topic": "Photosynthesis",
+      "difficulty": "easy",
+      "prompt": "Photosynthesis requires light energy.",
+      "explanation": "True. Chlorophyll absorbs light energy, which powers the reaction: carbon dioxide + water → glucose + oxygen.",
+      "timeLimit": 20,
+      "points": 100,
+      "speedBonus": 30,
+      "answer": true
+    },
+    {
+      "id": "B03",
+      "type": "fill",
+      "lab": "biology",
+      "topic": "Photosynthesis",
+      "difficulty": "easy",
+      "prompt": "Fill in the blank with the correct word.",
+      "explanation": "Plants absorb carbon dioxide (CO₂) from the atmosphere through tiny pores in their leaves called stomata.",
+      "timeLimit": 60,
+      "points": 300,
+      "speedBonus": 0,
+      "text": "Plants absorb ___ dioxide from the atmosphere.",
+      "blanks": [
+        {
+          "accepted": [
+            "carbon"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "B04",
+      "type": "mcq",
+      "lab": "biology",
+      "topic": "Photosynthesis",
+      "difficulty": "easy",
+      "prompt": "Which substance absorbs light energy in green plants?",
+      "explanation": "Chlorophyll is the green pigment in chloroplasts. It absorbs light energy for photosynthesis.",
+      "timeLimit": 30,
+      "points": 100,
+      "speedBonus": 30,
+      "options": [
+        "Glucose",
+        "Chlorophyll",
+        "Oxygen",
+        "Starch"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "B05",
+      "type": "truefalse",
+      "lab": "biology",
+      "topic": "Photosynthesis",
+      "difficulty": "medium",
+      "prompt": "Photosynthesis releases carbon dioxide into the atmosphere.",
+      "explanation": "False. Photosynthesis REMOVES carbon dioxide from the atmosphere and releases oxygen. Respiration is the process that releases carbon dioxide.",
+      "timeLimit": 20,
+      "points": 100,
+      "speedBonus": 30,
+      "answer": false
+    },
+    {
+      "id": "B06",
+      "type": "fill",
+      "lab": "biology",
+      "topic": "Photosynthesis",
+      "difficulty": "medium",
+      "prompt": "Fill in the blank with the correct word.",
+      "explanation": "Word equation: carbon dioxide + water → glucose + oxygen (using light energy absorbed by chlorophyll).",
+      "timeLimit": 60,
+      "points": 300,
+      "speedBonus": 0,
+      "text": "During photosynthesis, plants produce glucose and ___.",
+      "blanks": [
+        {
+          "accepted": [
+            "oxygen",
+            "O2",
+            "oxygen gas"
+          ],
+          "rejected": [
+            "carbon dioxide",
+            "co2",
+            "water"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "B07",
+      "type": "mcq",
+      "lab": "biology",
+      "topic": "Respiration",
+      "difficulty": "medium",
+      "prompt": "Which process releases carbon dioxide during the breakdown of glucose in aerobic respiration?",
+      "explanation": "Aerobic respiration: glucose + oxygen → carbon dioxide + water (+ energy released). The carbon dioxide returns to the atmosphere.",
+      "timeLimit": 30,
+      "points": 100,
+      "speedBonus": 30,
+      "options": [
+        "Feeding",
+        "Photosynthesis",
+        "Respiration",
+        "Absorption"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "B08",
+      "type": "truefalse",
+      "lab": "biology",
+      "topic": "Feeding",
+      "difficulty": "easy",
+      "prompt": "Animals obtain carbon by eating plants or other animals.",
+      "explanation": "True. Animals cannot photosynthesise, so they get carbon compounds by feeding on plants or other animals.",
+      "timeLimit": 20,
+      "points": 100,
+      "speedBonus": 30,
+      "answer": true
+    },
+    {
+      "id": "B09",
+      "type": "fill",
+      "lab": "biology",
+      "topic": "Decomposition",
+      "difficulty": "easy",
+      "prompt": "Fill in the blank with the correct word.",
+      "explanation": "Decomposers (mainly bacteria and fungi) break down dead organisms and waste. Their respiration releases the carbon back into the air as carbon dioxide.",
+      "timeLimit": 60,
+      "points": 300,
+      "speedBonus": 0,
+      "text": "Dead organisms are broken down by ___.",
+      "blanks": [
+        {
+          "accepted": [
+            "decomposers",
+            "decomposer",
+            "bacteria and fungi",
+            "fungi and bacteria",
+            "microorganisms",
+            "micro-organisms",
+            "microbes"
+          ],
+          "rejected": [
+            "producers",
+            "consumers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "B10",
+      "type": "mcq",
+      "lab": "biology",
+      "topic": "Carbon stores",
+      "difficulty": "medium",
+      "prompt": "Which is a major carbon store?",
+      "explanation": "Oceans are a major carbon store: carbon dioxide dissolves in sea water and carbon is locked in shells and sediments. Other stores include the atmosphere, living organisms, fossil fuels and limestone rocks.",
+      "timeLimit": 30,
+      "points": 100,
+      "speedBonus": 30,
+      "options": [
+        "Clouds",
+        "Oceans",
+        "Lightning",
+        "Sunlight"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "B11",
+      "type": "matching",
+      "lab": "biology",
+      "topic": "Carbon cycle",
+      "difficulty": "medium",
+      "prompt": "Match each process to its role in the carbon cycle.",
+      "explanation": "Photosynthesis removes CO₂ from the air; respiration returns it; feeding passes carbon along food chains; decomposition breaks down dead material so the carbon can be recycled.",
+      "timeLimit": 60,
+      "points": 300,
+      "speedBonus": 0,
+      "pairs": [
+        {
+          "left": "Photosynthesis",
+          "right": "Takes in carbon dioxide to make glucose"
+        },
+        {
+          "left": "Respiration",
+          "right": "Releases carbon dioxide"
+        },
+        {
+          "left": "Feeding",
+          "right": "Transfers carbon between organisms"
+        },
+        {
+          "left": "Decomposition",
+          "right": "Breaks down dead material"
+        }
+      ],
+      "adapted": {
+        "type": "mcq",
+        "prompt": "Which process takes in carbon dioxide to make glucose?",
+        "options": [
+          "Respiration",
+          "Photosynthesis",
+          "Feeding",
+          "Decomposition"
+        ],
+        "answer": 1
+      }
+    },
+    {
+      "id": "B12",
+      "type": "dragdrop",
+      "lab": "biology",
+      "topic": "Carbon cycle",
+      "difficulty": "medium",
+      "prompt": "Complete the carbon cycle by dragging the correct processes to the labelled boxes.",
+      "explanation": "CO₂ in the air → plants by photosynthesis; plants → rabbit by feeding; rabbit → CO₂ in the air by respiration; dead material → decomposers by decomposition.",
+      "timeLimit": 90,
+      "points": 400,
+      "speedBonus": 0,
+      "diagram": {
+        "kind": "carbon-cycle"
+      },
+      "zones": [
+        {
+          "id": "z1",
+          "x": 15,
+          "y": 25,
+          "w": 24,
+          "h": 11,
+          "answer": "Photosynthesis"
+        },
+        {
+          "id": "z2",
+          "x": 22,
+          "y": 86,
+          "w": 24,
+          "h": 11,
+          "answer": "Feeding"
+        },
+        {
+          "id": "z3",
+          "x": 56,
+          "y": 36,
+          "w": 24,
+          "h": 11,
+          "answer": "Respiration"
+        },
+        {
+          "id": "z4",
+          "x": 69,
+          "y": 60,
+          "w": 24,
+          "h": 11,
+          "answer": "Decomposition"
+        }
+      ],
+      "distractors": [],
+      "adapted": {
+        "type": "mcq",
+        "prompt": "Which process moves carbon from the air into plants?",
+        "options": [
+          "Feeding",
+          "Respiration",
+          "Photosynthesis",
+          "Decomposition"
+        ],
+        "answer": 2
+      }
+    },
+    {
+      "id": "B13",
+      "type": "truefalse",
+      "lab": "biology",
+      "topic": "Carbon stores",
+      "difficulty": "easy",
+      "prompt": "Carbon can be stored in the bodies of living organisms.",
+      "explanation": "True. Carbon is found in the carbohydrates, proteins and fats that make up living organisms, so living things are a carbon store.",
+      "timeLimit": 20,
+      "points": 100,
+      "speedBonus": 30,
+      "answer": true
+    },
+    {
+      "id": "B14",
+      "type": "mcq",
+      "lab": "biology",
+      "topic": "Feeding",
+      "difficulty": "medium",
+      "prompt": "What happens to carbon when a rabbit eats grass?",
+      "explanation": "Carbon compounds in the grass are digested and used to build the rabbit’s body. Carbon is never destroyed; it is transferred along the food chain.",
+      "timeLimit": 30,
+      "points": 100,
+      "speedBonus": 30,
+      "options": [
+        "It disappears",
+        "It moves from grass to rabbit",
+        "It becomes sunlight",
+        "It is destroyed"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "B15",
+      "type": "fill",
+      "lab": "biology",
+      "topic": "Respiration",
+      "difficulty": "medium",
+      "prompt": "Fill in the blank with the correct word.",
+      "explanation": "Respiration in plants, animals and decomposers releases carbon dioxide back into the atmosphere. (Combustion of fuels also releases it.)",
+      "timeLimit": 60,
+      "points": 300,
+      "speedBonus": 0,
+      "text": "Carbon dioxide is returned to the atmosphere during ___.",
+      "blanks": [
+        {
+          "accepted": [
+            "respiration",
+            "aerobic respiration",
+            "cellular respiration",
+            "combustion",
+            "burning"
+          ],
+          "rejected": [
+            "photosynthesis"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "B16",
+      "type": "mcq",
+      "lab": "biology",
+      "topic": "Decomposition",
+      "difficulty": "easy",
+      "prompt": "Which organisms play an important role in decomposition?",
+      "explanation": "Bacteria and fungi are the main decomposers. They feed on dead material and release carbon dioxide through respiration.",
+      "timeLimit": 30,
+      "points": 100,
+      "speedBonus": 30,
+      "options": [
+        "Bacteria and fungi",
+        "Only mammals",
+        "Only plants",
+        "Only birds"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "B17",
+      "type": "truefalse",
+      "lab": "biology",
+      "topic": "Decomposition",
+      "difficulty": "easy",
+      "prompt": "Decomposition helps recycle carbon in ecosystems.",
+      "explanation": "True. Decomposers break down dead organisms, returning carbon to the air (as CO₂) and nutrients to the soil.",
+      "timeLimit": 20,
+      "points": 100,
+      "speedBonus": 30,
+      "answer": true
+    },
+    {
+      "id": "B18",
+      "type": "dragdrop",
+      "lab": "biology",
+      "topic": "Carbon cycle",
+      "difficulty": "hard",
+      "prompt": "Arrange the stages in the order that carbon moves through this food chain.",
+      "explanation": "Carbon dioxide in the air is taken in by the plant (photosynthesis), the rabbit eats the plant, and the fox eats the rabbit (feeding).",
+      "timeLimit": 90,
+      "points": 400,
+      "speedBonus": 0,
+      "diagram": {
+        "kind": "sequence"
+      },
+      "zones": [
+        {
+          "id": "s1",
+          "x": 1,
+          "y": 38,
+          "w": 22,
+          "h": 24,
+          "answer": "Carbon dioxide in air",
+          "label": "1"
+        },
+        {
+          "id": "s2",
+          "x": 26,
+          "y": 38,
+          "w": 22,
+          "h": 24,
+          "answer": "Plant",
+          "label": "2"
+        },
+        {
+          "id": "s3",
+          "x": 51,
+          "y": 38,
+          "w": 22,
+          "h": 24,
+          "answer": "Rabbit",
+          "label": "3"
+        },
+        {
+          "id": "s4",
+          "x": 76,
+          "y": 38,
+          "w": 22,
+          "h": 24,
+          "answer": "Fox",
+          "label": "4"
+        }
+      ]
+    },
+    {
+      "id": "P01",
+      "type": "mcq",
+      "lab": "physics",
+      "topic": "Density",
+      "difficulty": "easy",
+      "prompt": "What is the formula for density?",
+      "explanation": "Density = mass ÷ volume (ρ = m / V). Its units are g/cm³ or kg/m³.",
+      "timeLimit": 30,
+      "points": 100,
+      "speedBonus": 30,
+      "options": [
+        "Mass × Volume",
+        "Mass ÷ Volume",
+        "Volume ÷ Mass",
+        "Mass + Volume"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "P02",
+      "type": "truefalse",
+      "lab": "physics",
+      "topic": "Density",
+      "difficulty": "easy",
+      "prompt": "Density describes mass per unit volume.",
+      "explanation": "True. Density tells you how much mass is packed into each unit of volume, e.g. each cm³.",
+      "timeLimit": 20,
+      "points": 100,
+      "speedBonus": 30,
+      "answer": true
+    },
+    {
+      "id": "P03",
+      "type": "numeric",
+      "lab": "physics",
+      "topic": "Density calculations",
+      "difficulty": "medium",
+      "prompt": "A block has a mass of 120 g and a volume of 40 cm³. Calculate its density.",
+      "explanation": "Density = mass ÷ volume = 120 g ÷ 40 cm³ = 3.0 g/cm³.",
+      "timeLimit": 60,
+      "points": 100,
+      "speedBonus": 30,
+      "answer": 3,
+      "unit": "g/cm³",
+      "tolerance": 0.01,
+      "toleranceType": "absolute",
+      "diagram": {
+        "kind": "balance-cylinder",
+        "mass": 120,
+        "volume": 40,
+        "object": "block"
+      }
+    },
+    {
+      "id": "P04",
+      "type": "mcq",
+      "lab": "physics",
+      "topic": "Mass",
+      "difficulty": "easy",
+      "prompt": "Which instrument measures mass?",
+      "explanation": "A balance measures mass (in g or kg).",
+      "timeLimit": 30,
+      "points": 100,
+      "speedBonus": 30,
+      "options": [
+        "Thermometer",
+        "Ruler",
+        "Balance",
+        "Measuring cylinder"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "P05",
+      "type": "numeric",
+      "lab": "physics",
+      "topic": "Density calculations",
+      "difficulty": "medium",
+      "prompt": "A liquid has a density of 2 g/cm³ and a volume of 50 cm³. Calculate its mass.",
+      "explanation": "Mass = density × volume = 2 g/cm³ × 50 cm³ = 100 g.",
+      "timeLimit": 60,
+      "points": 100,
+      "speedBonus": 30,
+      "answer": 100,
+      "unit": "g",
+      "tolerance": 0.01,
+      "toleranceType": "absolute"
+    },
+    {
+      "id": "P06",
+      "type": "fill",
+      "lab": "physics",
+      "topic": "Density",
+      "difficulty": "hard",
+      "prompt": "Fill in the blank with the correct word.",
+      "explanation": "The SI unit of density is kilograms per cubic metre (kg/m³). g/cm³ is also commonly used but is not the SI unit (1 g/cm³ = 1000 kg/m³).",
+      "timeLimit": 60,
+      "points": 300,
+      "speedBonus": 0,
+      "text": "The SI unit of density is ___.",
+      "blanks": [
+        {
+          "accepted": [
+            "kg/m³",
+            "kg/m3",
+            "kg m-3",
+            "kgm-3",
+            "kg per m3",
+            "kg per cubic metre",
+            "kilograms per cubic metre",
+            "kilogram per cubic metre",
+            "kilograms per cubic meter",
+            "kilogram per cubic meter",
+            "kg/m^3"
+          ],
+          "rejected": [
+            "g/cm3",
+            "g/cm³",
+            "g/ml",
+            "kg",
+            "m3"
+          ]
+        }
+      ],
+      "adapted": {
+        "type": "mcq",
+        "prompt": "What is the SI unit of density?",
+        "options": [
+          "kg",
+          "kg/m³",
+          "m³",
+          "N"
+        ],
+        "answer": 1
+      }
+    },
+    {
+      "id": "P07",
+      "type": "numeric",
+      "lab": "physics",
+      "topic": "Density calculations",
+      "difficulty": "medium",
+      "prompt": "A material has a mass of 240 g and a density of 8 g/cm³. Calculate its volume.",
+      "explanation": "Volume = mass ÷ density = 240 g ÷ 8 g/cm³ = 30 cm³.",
+      "timeLimit": 60,
+      "points": 100,
+      "speedBonus": 30,
+      "answer": 30,
+      "unit": "cm³",
+      "tolerance": 0.01,
+      "toleranceType": "absolute"
+    },
+    {
+      "id": "P08",
+      "type": "truefalse",
+      "lab": "physics",
+      "topic": "Density",
+      "difficulty": "medium",
+      "prompt": "An object with a lower average density than water will normally float in water.",
+      "explanation": "True. Water has a density of about 1 g/cm³. Objects with a lower average density float; objects with a higher density sink.",
+      "timeLimit": 20,
+      "points": 100,
+      "speedBonus": 30,
+      "answer": true
+    },
+    {
+      "id": "P09",
+      "type": "numeric",
+      "lab": "physics",
+      "topic": "Water displacement",
+      "difficulty": "medium",
+      "prompt": "Water rises from 35 mL to 62 mL when a stone is submerged. Find the stone’s volume.",
+      "explanation": "Volume of stone = volume of water displaced = 62 mL − 35 mL = 27 mL = 27 cm³ (1 mL = 1 cm³).",
+      "timeLimit": 60,
+      "points": 100,
+      "speedBonus": 30,
+      "answer": 27,
+      "unit": "cm³",
+      "tolerance": 0.01,
+      "toleranceType": "absolute",
+      "adapted": {
+        "type": "mcq",
+        "prompt": "Water rises from 35 mL to 62 mL when a stone is added. What is the stone’s volume?",
+        "options": [
+          "97 cm³",
+          "35 cm³",
+          "27 cm³",
+          "62 cm³"
+        ],
+        "answer": 2
+      }
+    },
+    {
+      "id": "P10",
+      "type": "mcq",
+      "lab": "physics",
+      "topic": "Water displacement",
+      "difficulty": "easy",
+      "prompt": "Which method measures the volume of an irregular stone?",
+      "explanation": "Lower the stone into a measuring cylinder of water. The rise in water level equals the stone’s volume.",
+      "timeLimit": 30,
+      "points": 100,
+      "speedBonus": 30,
+      "options": [
+        "Stopwatch",
+        "Water displacement",
+        "Thermometer",
+        "Balance only"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "P11",
+      "type": "matching",
+      "lab": "physics",
+      "topic": "Mass, volume and density",
+      "difficulty": "medium",
+      "prompt": "Match each quantity to its description.",
+      "explanation": "Mass is the amount of matter (g, kg); volume is the space it takes up (cm³, m³); density is mass ÷ volume; temperature measures how hot or cold something is (°C).",
+      "timeLimit": 60,
+      "points": 300,
+      "speedBonus": 0,
+      "pairs": [
+        {
+          "left": "Mass",
+          "right": "Amount of matter"
+        },
+        {
+          "left": "Volume",
+          "right": "Space occupied"
+        },
+        {
+          "left": "Density",
+          "right": "Mass per unit volume"
+        },
+        {
+          "left": "Temperature",
+          "right": "Measure of how hot or cold something is"
+        }
+      ]
+    },
+    {
+      "id": "P12",
+      "type": "numeric",
+      "lab": "physics",
+      "topic": "Density calculations",
+      "difficulty": "hard",
+      "prompt": "A rectangular block measures 5 cm × 4 cm × 3 cm and has a mass of 180 g. Find its density.",
+      "explanation": "Volume = 5 × 4 × 3 = 60 cm³. Density = 180 g ÷ 60 cm³ = 3.0 g/cm³.",
+      "timeLimit": 60,
+      "points": 100,
+      "speedBonus": 30,
+      "answer": 3,
+      "unit": "g/cm³",
+      "tolerance": 0.01,
+      "toleranceType": "absolute"
+    },
+    {
+      "id": "P13",
+      "type": "mcq",
+      "lab": "physics",
+      "topic": "Heat and temperature",
+      "difficulty": "easy",
+      "prompt": "Which instrument measures temperature?",
+      "explanation": "A thermometer measures temperature, usually in °C.",
+      "timeLimit": 30,
+      "points": 100,
+      "speedBonus": 30,
+      "options": [
+        "Balance",
+        "Thermometer",
+        "Measuring cylinder",
+        "Stopwatch"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "P14",
+      "type": "truefalse",
+      "lab": "physics",
+      "topic": "Heat and temperature",
+      "difficulty": "medium",
+      "prompt": "Heat and temperature mean exactly the same thing.",
+      "explanation": "False. Temperature (°C) measures how hot or cold something is. Heat is thermal energy (J) transferred from a hotter object to a cooler one.",
+      "timeLimit": 20,
+      "points": 100,
+      "speedBonus": 30,
+      "answer": false
+    },
+    {
+      "id": "P15",
+      "type": "matching",
+      "lab": "physics",
+      "topic": "Thermal energy transfer",
+      "difficulty": "hard",
+      "prompt": "Match each method of thermal energy transfer to its description.",
+      "explanation": "Conduction: particles pass energy to neighbours (mainly in solids). Convection: warmer, less dense fluid rises and carries energy. Radiation: infrared waves, which need no particles and can travel through space.",
+      "timeLimit": 60,
+      "points": 300,
+      "speedBonus": 0,
+      "pairs": [
+        {
+          "left": "Conduction",
+          "right": "Energy transfer through direct interactions between particles"
+        },
+        {
+          "left": "Convection",
+          "right": "Energy transfer through movement of liquids or gases"
+        },
+        {
+          "left": "Radiation",
+          "right": "Energy transfer by electromagnetic waves"
+        }
+      ]
+    },
+    {
+      "id": "P16",
+      "type": "mcq",
+      "lab": "physics",
+      "topic": "Thermal energy transfer",
+      "difficulty": "medium",
+      "prompt": "How does thermal energy from the Sun reach Earth?",
+      "explanation": "Space is almost a vacuum, so there are no particles for conduction or convection. The Sun’s energy reaches Earth by radiation (electromagnetic waves).",
+      "timeLimit": 30,
+      "points": 100,
+      "speedBonus": 30,
+      "options": [
+        "Conduction",
+        "Convection",
+        "Radiation",
+        "Evaporation"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "C01",
+      "type": "mcq",
+      "lab": "chemistry",
+      "topic": "Atomic structure",
+      "difficulty": "easy",
+      "prompt": "Which particle has a positive charge?",
+      "explanation": "Protons are positive (+1), electrons are negative (−1) and neutrons have no charge.",
+      "timeLimit": 30,
+      "points": 100,
+      "speedBonus": 30,
+      "options": [
+        "Electron",
+        "Neutron",
+        "Proton",
+        "Atom"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "C02",
+      "type": "truefalse",
+      "lab": "chemistry",
+      "topic": "Atomic structure",
+      "difficulty": "easy",
+      "prompt": "Neutrons have no electrical charge.",
+      "explanation": "True. Neutrons are neutral. They are found with protons in the nucleus.",
+      "timeLimit": 20,
+      "points": 100,
+      "speedBonus": 30,
+      "answer": true
+    },
+    {
+      "id": "C03",
+      "type": "fill",
+      "lab": "chemistry",
+      "topic": "Atomic structure",
+      "difficulty": "easy",
+      "prompt": "Fill in the blank with the correct word.",
+      "explanation": "The nucleus is at the centre of the atom. It contains protons and neutrons and holds almost all of the atom’s mass.",
+      "timeLimit": 60,
+      "points": 300,
+      "speedBonus": 0,
+      "text": "The centre of an atom is called the ___.",
+      "blanks": [
+        {
+          "accepted": [
+            "nucleus",
+            "the nucleus"
+          ],
+          "rejected": [
+            "neutron",
+            "proton",
+            "electron",
+            "shell"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C04",
+      "type": "mcq",
+      "lab": "chemistry",
+      "topic": "Electron shells",
+      "difficulty": "easy",
+      "prompt": "Which particles occupy electron shells?",
+      "explanation": "Electrons occupy shells (energy levels) around the nucleus.",
+      "timeLimit": 30,
+      "points": 100,
+      "speedBonus": 30,
+      "options": [
+        "Protons",
+        "Neutrons",
+        "Electrons",
+        "Nuclei"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "C05",
+      "type": "truefalse",
+      "lab": "chemistry",
+      "topic": "Atomic number",
+      "difficulty": "easy",
+      "prompt": "The atomic number equals the number of protons in an atom.",
+      "explanation": "True. The atomic number (proton number) is the number of protons, and it identifies the element.",
+      "timeLimit": 20,
+      "points": 100,
+      "speedBonus": 30,
+      "answer": true
+    },
+    {
+      "id": "C06",
+      "type": "numeric",
+      "lab": "chemistry",
+      "topic": "Mass number",
+      "difficulty": "medium",
+      "prompt": "An atom has a mass number of 23 and an atomic number of 11. How many neutrons does it have?",
+      "explanation": "Neutrons = mass number − atomic number = 23 − 11 = 12. (This is sodium-23.)",
+      "timeLimit": 60,
+      "points": 100,
+      "speedBonus": 30,
+      "answer": 12,
+      "unit": "neutrons",
+      "tolerance": 0,
+      "toleranceType": "absolute"
+    },
+    {
+      "id": "C07",
+      "type": "mcq",
+      "lab": "chemistry",
+      "topic": "Atomic models",
+      "difficulty": "medium",
+      "prompt": "Who proposed the nuclear model following the gold foil experiment?",
+      "explanation": "Rutherford’s gold foil experiment (1911) showed a tiny, dense, positive nucleus, which led to the nuclear model of the atom.",
+      "timeLimit": 30,
+      "points": 100,
+      "speedBonus": 30,
+      "options": [
+        "Dalton",
+        "Rutherford",
+        "Bohr",
+        "Newton"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "C08",
+      "type": "truefalse",
+      "lab": "chemistry",
+      "topic": "Atomic models",
+      "difficulty": "medium",
+      "prompt": "Rutherford’s experiment showed that most of an atom is empty space.",
+      "explanation": "True. Most alpha particles passed straight through the gold foil, so most of the atom must be empty space. A few bounced back off the small, dense nucleus.",
+      "timeLimit": 20,
+      "points": 100,
+      "speedBonus": 30,
+      "answer": true
+    },
+    {
+      "id": "C09",
+      "type": "mcq",
+      "lab": "chemistry",
+      "topic": "Atomic models",
+      "difficulty": "medium",
+      "prompt": "Which scientist introduced the model with electrons in fixed energy levels?",
+      "explanation": "Bohr (1913) proposed that electrons orbit the nucleus in fixed shells (energy levels).",
+      "timeLimit": 30,
+      "points": 100,
+      "speedBonus": 30,
+      "options": [
+        "Bohr",
+        "Rutherford",
+        "Thomson",
+        "Dalton"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "C10",
+      "type": "atom",
+      "lab": "chemistry",
+      "topic": "Electronic configuration",
+      "difficulty": "medium",
+      "prompt": "Arrange the electrons in the shells of a neutral sodium atom (atomic number 11).",
+      "explanation": "Sodium has 11 electrons: 2 in the first shell, 8 in the second and 1 in the third → 2, 8, 1.",
+      "timeLimit": 60,
+      "points": 300,
+      "speedBonus": 0,
+      "element": "Sodium",
+      "symbol": "Na",
+      "atomicNumber": 11,
+      "shells": [
+        2,
+        8,
+        1
+      ],
+      "maxShells": 4,
+      "adapted": {
+        "type": "mcq",
+        "prompt": "What is the electronic configuration of sodium (11 electrons)?",
+        "options": [
+          "2, 9",
+          "2, 8, 1",
+          "8, 2, 1",
+          "2, 7, 2"
+        ],
+        "answer": 1
+      }
+    },
+    {
+      "id": "C11",
+      "type": "atom",
+      "lab": "chemistry",
+      "topic": "Electronic configuration",
+      "difficulty": "hard",
+      "prompt": "Arrange the electrons in the shells of a neutral chlorine atom (atomic number 17).",
+      "explanation": "Chlorine has 17 electrons: 2 + 8 + 7 → 2, 8, 7.",
+      "timeLimit": 60,
+      "points": 300,
+      "speedBonus": 0,
+      "element": "Chlorine",
+      "symbol": "Cl",
+      "atomicNumber": 17,
+      "shells": [
+        2,
+        8,
+        7
+      ],
+      "maxShells": 4
+    },
+    {
+      "id": "C12",
+      "type": "fill",
+      "lab": "chemistry",
+      "topic": "First 20 elements",
+      "difficulty": "medium",
+      "prompt": "Fill in the blank with the correct word.",
+      "explanation": "Potassium’s symbol is K, from its Latin name kalium. (P is phosphorus.)",
+      "timeLimit": 60,
+      "points": 300,
+      "speedBonus": 0,
+      "text": "The chemical symbol for potassium is ___.",
+      "blanks": [
+        {
+          "accepted": [
+            "K"
+          ],
+          "rejected": [
+            "P",
+            "Po",
+            "Pt",
+            "Pm"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C13",
+      "type": "mcq",
+      "lab": "chemistry",
+      "topic": "First 20 elements",
+      "difficulty": "easy",
+      "prompt": "Which element has atomic number 8?",
+      "explanation": "Oxygen has 8 protons, so its atomic number is 8. (Carbon is 6, nitrogen 7, neon 10.)",
+      "timeLimit": 30,
+      "points": 100,
+      "speedBonus": 30,
+      "options": [
+        "Nitrogen",
+        "Oxygen",
+        "Carbon",
+        "Neon"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "C14",
+      "type": "matching",
+      "lab": "chemistry",
+      "topic": "First 20 elements",
+      "difficulty": "medium",
+      "prompt": "Match each symbol to its element name.",
+      "explanation": "Na = sodium (from Latin natrium), Mg = magnesium, Al = aluminium, Ca = calcium.",
+      "timeLimit": 60,
+      "points": 300,
+      "speedBonus": 0,
+      "pairs": [
+        {
+          "left": "Na",
+          "right": "Sodium"
+        },
+        {
+          "left": "Mg",
+          "right": "Magnesium"
+        },
+        {
+          "left": "Al",
+          "right": "Aluminium"
+        },
+        {
+          "left": "Ca",
+          "right": "Calcium"
+        }
+      ]
+    },
+    {
+      "id": "C15",
+      "type": "truefalse",
+      "lab": "chemistry",
+      "topic": "Atomic structure",
+      "difficulty": "medium",
+      "prompt": "A neutral atom contains equal numbers of protons and electrons.",
+      "explanation": "True. The positive charges of the protons are balanced by the same number of negative electrons, so the atom has no overall charge.",
+      "timeLimit": 20,
+      "points": 100,
+      "speedBonus": 30,
+      "answer": true
+    },
+    {
+      "id": "C16",
+      "type": "atom",
+      "lab": "chemistry",
+      "topic": "Electronic configuration",
+      "difficulty": "hard",
+      "prompt": "Arrange the electrons in the shells of a neutral calcium atom (atomic number 20).",
+      "explanation": "Calcium has 20 electrons: 2 + 8 + 8 + 2 → 2, 8, 8, 2.",
+      "timeLimit": 60,
+      "points": 300,
+      "speedBonus": 0,
+      "element": "Calcium",
+      "symbol": "Ca",
+      "atomicNumber": 20,
+      "shells": [
+        2,
+        8,
+        8,
+        2
+      ],
+      "maxShells": 4
+    }
+  ],
+  "presets": {
+    "default24": {
+      "name": "Science Quest — 24 challenges (45 min)",
+      "rounds": [
+        {
+          "title": "Round 1: Biology Lab",
+          "lab": "biology",
+          "subtitle": "Photosynthesis & the Carbon Cycle",
+          "questionIds": [
+            "B01",
+            "B02",
+            "B10",
+            "B09",
+            "B12",
+            "B11"
+          ]
+        },
+        {
+          "title": "Round 2: Physics Lab",
+          "lab": "physics",
+          "subtitle": "Matter, Density & Heat",
+          "questionIds": [
+            "P01",
+            "P04",
+            "P03",
+            "P10",
+            "P09",
+            "P15"
+          ]
+        },
+        {
+          "title": "Round 3: Chemistry Lab",
+          "lab": "chemistry",
+          "subtitle": "Atomic Structure",
+          "questionIds": [
+            "C01",
+            "C05",
+            "C03",
+            "C07",
+            "C06",
+            "C10"
+          ]
+        },
+        {
+          "title": "Round 4: Final Science Challenge",
+          "lab": "mixed",
+          "subtitle": "Biology · Physics · Chemistry",
+          "questionIds": [
+            "B07",
+            "P16",
+            "C13",
+            "B18",
+            "P12",
+            "C16"
+          ]
+        }
+      ]
+    },
+    "all50": {
+      "name": "All 50 challenges (by lab)",
+      "rounds": [
+        {
+          "title": "Round 1: Biology Lab",
+          "lab": "biology",
+          "subtitle": "Photosynthesis & the Carbon Cycle",
+          "questionIds": [
+            "B01",
+            "B02",
+            "B03",
+            "B04",
+            "B05",
+            "B06",
+            "B07",
+            "B08",
+            "B09",
+            "B10",
+            "B11",
+            "B12",
+            "B13",
+            "B14",
+            "B15",
+            "B16",
+            "B17",
+            "B18"
+          ]
+        },
+        {
+          "title": "Round 2: Physics Lab",
+          "lab": "physics",
+          "subtitle": "Matter, Density & Heat",
+          "questionIds": [
+            "P01",
+            "P02",
+            "P03",
+            "P04",
+            "P05",
+            "P06",
+            "P07",
+            "P08",
+            "P09",
+            "P10",
+            "P11",
+            "P12",
+            "P13",
+            "P14",
+            "P15",
+            "P16"
+          ]
+        },
+        {
+          "title": "Round 3: Chemistry Lab",
+          "lab": "chemistry",
+          "subtitle": "Atomic Structure",
+          "questionIds": [
+            "C01",
+            "C02",
+            "C03",
+            "C04",
+            "C05",
+            "C06",
+            "C07",
+            "C08",
+            "C09",
+            "C10",
+            "C11",
+            "C12",
+            "C13",
+            "C14",
+            "C15",
+            "C16"
+          ]
+        }
+      ]
+    }
+  }
+}

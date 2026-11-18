@@ -1,0 +1,109 @@
+@import '@fontsource/lilita-one/400.css';
+@import '@fontsource/fredoka/500.css';
+@import '@fontsource/fredoka/600.css';
+@import '@fontsource/fredoka/700.css';
+@import '@fontsource/nunito/600.css';
+@import '@fontsource/nunito/800.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: dark; }
+html, body, #root { height: 100%; }
+body {
+  margin: 0;
+  background: #050a24;
+  color: #fff;
+  font-family: Nunito, system-ui, sans-serif;
+  -webkit-tap-highlight-color: transparent;
+  overscroll-behavior: none;
+}
+button { touch-action: manipulation; }
+
+@layer components {
+  /* ── Lab background ── */
+  .sq-bg {
+    position: fixed; inset: 0; z-index: 0; overflow: hidden; pointer-events: none;
+    background:
+      radial-gradient(60% 50% at 85% 10%, rgba(162, 75, 255, 0.45), transparent 70%),
+      radial-gradient(55% 45% at 10% 20%, rgba(47, 123, 255, 0.45), transparent 70%),
+      radial-gradient(70% 40% at 50% 105%, rgba(56, 225, 255, 0.35), transparent 70%),
+      linear-gradient(180deg, #0b1650 0%, #0a1240 45%, #120a45 100%);
+  }
+  .sq-bg::before { /* glowing ceiling light strips */
+    content: ''; position: absolute; left: -10%; right: -10%; top: 0; height: 40%;
+    background:
+      linear-gradient(100deg, transparent 8%, rgba(56, 225, 255, 0.55) 8.4%, transparent 9%) ,
+      linear-gradient(80deg, transparent 90%, rgba(56, 225, 255, 0.55) 90.4%, transparent 91%),
+      linear-gradient(95deg, transparent 30%, rgba(162, 75, 255, 0.35) 30.3%, transparent 30.8%),
+      linear-gradient(85deg, transparent 69%, rgba(162, 75, 255, 0.35) 69.3%, transparent 69.8%);
+    filter: blur(1px);
+    opacity: 0.8;
+  }
+  .sq-bg::after { /* reflective lab floor */
+    content: ''; position: absolute; left: -20%; right: -20%; bottom: -5%; height: 38%;
+    background:
+      repeating-linear-gradient(90deg, rgba(56, 225, 255, 0.12) 0 2px, transparent 2px 120px),
+      repeating-linear-gradient(0deg, rgba(56, 225, 255, 0.10) 0 2px, transparent 2px 60px),
+      linear-gradient(180deg, transparent, rgba(56, 225, 255, 0.15));
+    transform: perspective(500px) rotateX(60deg);
+    transform-origin: bottom;
+    mask-image: linear-gradient(180deg, transparent, #000 40%);
+  }
+
+  .neon-panel {
+    position: relative;
+    border-radius: 22px;
+    background: linear-gradient(180deg, rgba(23, 48, 140, 0.88), rgba(10, 20, 72, 0.92));
+    border: 2px solid rgba(56, 225, 255, 0.85);
+    box-shadow: 0 0 14px rgba(56, 225, 255, 0.55), 0 0 40px rgba(47, 123, 255, 0.25), inset 0 0 22px rgba(56, 225, 255, 0.16);
+  }
+  .neon-panel-purple {
+    border-color: rgba(190, 120, 255, 0.9);
+    box-shadow: 0 0 14px rgba(162, 75, 255, 0.6), 0 0 40px rgba(162, 75, 255, 0.25), inset 0 0 22px rgba(162, 75, 255, 0.18);
+  }
+  .glass-white {
+    border-radius: 22px;
+    background: linear-gradient(180deg, #ffffff, #e9eeff);
+    color: #0d1a5c;
+    box-shadow: 0 0 0 3px rgba(56, 225, 255, 0.55), 0 0 24px rgba(56, 225, 255, 0.45);
+  }
+  .lilac-bar {
+    border-radius: 999px;
+    background: linear-gradient(180deg, #f3eeff, #d9cfff);
+    color: #14135a;
+    box-shadow: 0 0 0 3px rgba(190, 150, 255, 0.6), 0 0 22px rgba(162, 75, 255, 0.45);
+  }
+  .chip {
+    border-radius: 18px;
+    background: linear-gradient(180deg, rgba(15, 30, 100, 0.92), rgba(8, 16, 60, 0.95));
+    border: 2px solid rgba(56, 225, 255, 0.85);
+    box-shadow: 0 0 12px rgba(56, 225, 255, 0.5), inset 0 0 14px rgba(56, 225, 255, 0.12);
+  }
+  .game-title { font-family: Fredoka, sans-serif; font-weight: 700; font-style: italic; letter-spacing: 0.01em; }
+  .glow-text { text-shadow: 0 0 10px rgba(56, 225, 255, 0.8), 0 2px 0 rgba(0, 0, 0, 0.35); }
+  .sq-input {
+    width: 100%; border-radius: 999px; padding: 0.85rem 1.2rem; font-size: 1.1rem; font-weight: 700;
+    color: #0d1a5c; background: #fff; border: 3px solid #2f6bff; outline: none;
+    box-shadow: 0 4px 0 rgba(20, 40, 140, 0.35), 0 0 16px rgba(47, 107, 255, 0.35);
+  }
+  .sq-input:focus { border-color: #a24bff; box-shadow: 0 0 0 4px rgba(162, 75, 255, 0.35); }
+  .field {
+    width: 100%; border-radius: 12px; padding: 0.5rem 0.75rem; font-size: 0.95rem; color: #fff;
+    background: rgba(5, 12, 50, 0.75); border: 1.5px solid rgba(56, 225, 255, 0.45); outline: none;
+  }
+  .field:focus { border-color: #38e1ff; box-shadow: 0 0 0 3px rgba(56, 225, 255, 0.25); }
+  .scroll-thin::-webkit-scrollbar { width: 8px; height: 8px; }
+  .scroll-thin::-webkit-scrollbar-thumb { background: rgba(56, 225, 255, 0.45); border-radius: 8px; }
+}
+
+@keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+@keyframes pulse-glow { 0%, 100% { filter: drop-shadow(0 0 8px rgba(56, 225, 255, 0.7)); } 50% { filter: drop-shadow(0 0 18px rgba(56, 225, 255, 1)); } }
+@keyframes bubble { 0% { transform: translateY(0) scale(0.6); opacity: 0; } 20% { opacity: 1; } 100% { transform: translateY(-120px) scale(1.1); opacity: 0; } }
+@keyframes spin-slow { to { transform: rotate(360deg); } }
+@keyframes dash { to { stroke-dashoffset: -40; } }
+.animate-float { animation: float 5s ease-in-out infinite; }
+.animate-glow { animation: pulse-glow 2.4s ease-in-out infinite; }
+.animate-spin-slow { animation: spin-slow 14s linear infinite; }
+.flow-arrow { stroke-dasharray: 16 8; animation: dash 1.2s linear infinite; }

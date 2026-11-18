@@ -1,0 +1,91 @@
+{
+  "rules": {
+    ".read": false,
+    ".write": false,
+    "teacherAllowlist": {
+      "$uid": {
+        ".read": "auth != null && auth.uid === $uid"
+      }
+    },
+    "teachers": {
+      "$uid": {
+        ".read": "auth != null && auth.provider !== 'anonymous' && root.child('teacherAllowlist').child(auth.uid).val() === true && auth.uid === $uid",
+        ".write": "auth != null && auth.provider !== 'anonymous' && root.child('teacherAllowlist').child(auth.uid).val() === true && auth.uid === $uid"
+      }
+    },
+    "rooms": {
+      "$room": {
+        ".validate": "$room.matches(/^[0-9]{6}$/)",
+        ".read": "auth != null && data.child('meta/hostUid').val() === auth.uid",
+        ".write": "auth != null && ((!data.exists() && auth != null && auth.provider !== 'anonymous' && root.child('teacherAllowlist').child(auth.uid).val() === true && newData.child('meta/hostUid').val() === auth.uid) || (data.exists() && data.child('meta/hostUid').val() === auth.uid))",
+        "meta": {
+          ".read": "auth != null",
+          ".validate": "newData.hasChildren(['hostUid', 'createdAt'])"
+        },
+        "settings": {
+          ".read": "auth != null"
+        },
+        "plan": {
+          ".read": "auth != null"
+        },
+        "state": {
+          ".read": "auth != null",
+          ".validate": "newData.hasChildren(['phase', 'qIndex', 'qKey'])"
+        },
+        "question": {
+          ".read": "auth != null"
+        },
+        "reveal": {
+          ".read": "auth != null"
+        },
+        "teams": {
+          ".read": "auth != null"
+        },
+        "scores": {
+          ".read": "auth != null"
+        },
+        "presence": {
+          ".read": "auth != null",
+          "$uid": {
+            ".write": "auth != null && auth.uid === $uid && (root.child('rooms/' + $room + '/players/' + $uid).exists() || newData.parent().parent().child('players/' + $uid).exists())",
+            ".validate": "newData.isBoolean()"
+          }
+        },
+        "names": {
+          ".read": "auth != null",
+          "$key": {
+            ".write": "auth != null && auth.provider === 'anonymous' && !data.exists() && newData.val() === auth.uid && newData.parent().parent().child('players/' + auth.uid + '/nameKey').val() === $key",
+            ".validate": "newData.isString()"
+          }
+        },
+        "players": {
+          ".read": "auth != null",
+          "$uid": {
+            ".write": "auth != null && auth.provider === 'anonymous' && auth.uid === $uid && !data.exists() && newData.exists() && !newData.hasChild('teamId') && !newData.hasChild('removed') && !newData.hasChild('adapted') && newData.child('joinedAt').val() === now && newData.parent().parent().child('names/' + newData.child('nameKey').val()).val() === auth.uid && (root.child('rooms/' + $room + '/state/phase').val() === 'LOBBY' || (root.child('rooms/' + $room + '/settings/allowLateJoin').val() === true && root.child('rooms/' + $room + '/state/phase').val() !== 'GAME_COMPLETE'))",
+            ".validate": "newData.hasChildren(['name', 'nameKey', 'joinedAt']) && newData.child('name').isString() && newData.child('name').val().length >= 1 && newData.child('name').val().length <= 20 && newData.child('nameKey').isString() && newData.child('joinedAt').isNumber()"
+          }
+        },
+        "submissions": {
+          "$q": {
+            "$uid": {
+              ".read": "auth != null && auth.uid === $uid",
+              ".write": "auth != null && auth.uid === $uid && !data.exists() && newData.exists() && root.child('rooms/' + $room + '/state/phase').val() === 'QUESTION_OPEN' && root.child('rooms/' + $room + '/state/qKey').val() === $q && root.child('rooms/' + $room + '/players/' + $uid + '/name').exists() && root.child('rooms/' + $room + '/players/' + $uid + '/removed').val() !== true",
+              ".validate": "newData.hasChildren(['a', 'at']) && newData.child('a').isString() && newData.child('a').val().length < 4000 && newData.child('at').val() === now"
+            }
+          }
+        },
+        "results": {
+          "$q": {
+            "$uid": {
+              ".read": "auth != null && auth.uid === $uid"
+            }
+          }
+        },
+        "hostPrivate": {},
+        "$other": {
+          ".validate": false
+        }
+      }
+    }
+  }
+}
