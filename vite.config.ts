@@ -8,5 +8,7 @@ export default defineConfig(({ mode }) => ({
   base: mode === 'demo' ? './' : process.env.BASE_PATH || '/',
   plugins: mode === 'demo' ? [react(), viteSingleFile()] : [react()],
   build: mode === 'demo' ? { outDir: 'dist-demo', assetsInlineLimit: 100_000_000 } : {},
+  // One copy of Firebase's core: two copies make "Service database is not available".
+  resolve: { dedupe: ['@firebase/app', '@firebase/component', '@firebase/util', '@firebase/logger'] },
   server: { host: true, port: 5173 },
 }));
