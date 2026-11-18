@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { readFileSync } from 'node:fs';
+import { existsSync, readFileSync } from 'node:fs';
 import { grade, judgeBlank, normalizeText, parseNumber, speedBonus, elapsedAt, electronConfiguration } from '../src/lib/grading';
 import {
   assignTeams, buildReveal, canTransition, nextStep, prepareGame, prepareQuestion, rankPlayers, rankTeams, seededRng,
@@ -9,13 +9,17 @@ import { parseCsvBank, parseJsonBank, exportBankCsv, exportBankJson } from '../s
 import { buildReport, reportCsv } from '../src/lib/report';
 import { DEFAULT_SETTINGS, type Player, type Question, type QuestionBank } from '../src/lib/types';
 
-const bankFile = readFileSync(new URL('../question-banks/science-quest-50.json', import.meta.url), 'utf8');
-const imported = parseJsonBank(bankFile);
+// The question banks hold answer keys, so they are kept out of the public repository.
+// Tests that need them run on the teacher's computer and are skipped on GitHub.
+const BANK_URL = new URL('../question-banks/science-quest-50.json', import.meta.url);
+const EXTRAS_URL = new URL('../question-banks/science-quest-extras.json', import.meta.url);
+const HAS_BANKS = existsSync(BANK_URL) && existsSync(EXTRAS_URL);
+const imported = HAS_BANKS ? parseJsonBank(readFileSync(BANK_URL, 'utf8')) : { bank: { name: '', questions: {} as Record<string, Question>, presets: {} as any }, errors: [], warnings: [] };
 const bank = imported.bank.questions;
 const rng = seededRng(42);
 const prep = (id: string, shuffle = false) => prepareQuestion(bank[id], 0, 0, 1, shuffle, seededRng(7));
 
-describe('starter bank', () => {
+describe.skipIf(!HAS_BANKS)('starter bank', () => {
   it('imports all 50 questions without errors', () => {
     expect(imported.errors).toEqual([]);
     expect(Object.keys(bank)).toHaveLength(50);
@@ -27,7 +31,7 @@ describe('starter bank', () => {
     expect(p.rounds.map((r) => r.questionIds.length)).toEqual([6, 6, 6, 6]);
   });
   it('density example is C = 3.0 g/cm³', () => {
-    const extras = parseJsonBank(readFileSync(new URL('../question-banks/science-quest-extras.json', import.meta.url), 'utf8'));
+    const extras = parseJsonBank(readFileSync(EXTRAS_URL, 'utf8'));
     expect(extras.errors).toEqual([]);
     const pq = prepareQuestion(extras.bank.questions.X02, 0, 0, 1, false);
     expect(buildReveal(pq, 'q0').correctLetter).toBe('C');
@@ -36,7 +40,7 @@ describe('starter bank', () => {
   });
 });
 
-describe('scoring', () => {
+describe.skipIf(!HAS_BANKS)('scoring', () => {
   it('MCQ: 100 + speed bonus up to 30, wrong = 0', () => {
     const pq = prep('B01');
     expect(grade(pq, { kind: 'choice', value: 2 }, { elapsedMs: 0 }).points).toBe(130);
@@ -128,7 +132,7 @@ describe('scoring', () => {
   });
 });
 
-describe('answer secrecy', () => {
+describe.skipIf(!HAS_BANKS)('answer secrecy', () => {
   it('public payloads never contain answer keys or explanations', () => {
     const { prepared } = prepareGame(imported.bank.presets!.all50.rounds, bank, DEFAULT_SETTINGS, rng);
     for (const pq of prepared) {
@@ -216,7 +220,7 @@ describe('teams and leaderboards', () => {
   });
 });
 
-describe('import / export', () => {
+describe.skipIf(!HAS_BANKS)('import / export', () => {
   it('round-trips the bank through JSON and CSV', () => {
     const full: QuestionBank = { id: 'x', ...imported.bank };
     const again = parseJsonBank(exportBankJson(full));
@@ -236,7 +240,7 @@ describe('import / export', () => {
   });
 });
 
-describe('report', () => {
+describe.skipIf(!HAS_BANKS)('report', () => {
   it('builds per-lab percentages and a CSV', () => {
     const { prepared } = prepareGame(imported.bank.presets!.default24.rounds, bank, DEFAULT_SETTINGS, rng);
     const players: Record<string, Player> = { a: { name: '=cmd', nameKey: 'x', joinedAt: 1, teamId: 't0' } };
